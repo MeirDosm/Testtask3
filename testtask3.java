@@ -17,14 +17,14 @@ public class CoffeeMachine {
 
         while (isOn) {
             String options = menu.getItems();
-            System.out.print("Что вы хотите заказать? (" + options + "):  ");
+            System.out.print("Посмотрите https://date.nager.at/Api, если не работает нажмите откл., если работает что вы хотите заказать (" + options + ") или отчет:  ");
             String userChoice = scanner.nextLine().toLowerCase();
 
             if (userChoice.equals("отчет")) {
                 coffeeMaker.report();
                 moneyMachine.report();
             } else if (userChoice.equals("выкл.")) {
-                System.out.println("Автомвт не работает.");
+                System.out.println("Автомат не работает.");
                 isOn = false;
             } else {
                 try {
