@@ -17,7 +17,7 @@ public class CoffeeMachine {
 
         while (isOn) {
             String options = menu.getItems();
-            System.out.print("Посмотрите https://date.nager.at/Api, если не работает нажмите откл., если работает что вы хотите заказать (" + options + ") или отчет:  ");
+            System.out.print("Посмотрите https://date.nager.at/Api, если не работает нажмите выкл., если работает что вы хотите заказать (" + options + ") или отчет:  ");
             String userChoice = scanner.nextLine().toLowerCase();
 
             if (userChoice.equals("отчет")) {
